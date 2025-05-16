@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+
+    <header id="top">
       <h1>Hello, I'm Tlhalefo Masuku.</h1>
       <p>Welcome to my portfolio website. Glad to see you here!</p>
     </header>
@@ -18,16 +26,50 @@
         the FNB App Academy 2025!
       </p>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li>A recreation of YouTube</li>
-        <li>Portfolio Website</li>
-        <li>Photograhy website</li>
-      </ul>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Portfolio website</h3>
+          <p>
+            A personal website to showcase our projects, skills and background.
+          </p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Photography</h3>
+          <p>
+            A webpage which expresses my experience in photogaphy and photo
+            editing.
+          </p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>UI Design</h3>
+          <p>
+            A webpage to showcase my projects, skills and background on Figma
+            UI/UX design.
+          </p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+      </div>
     </section>
     <footer>
-      <p>Contact me on: +27 81 123 2456 Email: @email-github.com</p>
+      <p>&copy 2025 Tlhalefo Masuku</p>
+      <div class="sociallinks">
+        <a href="mailto:thlalefomasuku@gmail.com" target="_blank" class="email"
+          >Email</a
+        >
+        <a
+          href="https://www.instagram.com/lucas_the.creator/"
+          target="_blank"
+          class="instagram"
+          >Instagram</a
+        >
+        <a href="https://github.com/Daydrip99" target="_blank" class="github"
+          >GitHub</a
+        >
+      </div>
     </footer>
   </body>
 </html>
