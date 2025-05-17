@@ -1,32 +1,42 @@
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: black;
+    background-color: #1f1f1f;
+    color: white;
     margin: 0; 
     padding: 0;
 }
 header {
-    background: #007bff;
-    color: white;
+    background: #272727;
+    color: #FFF;
     padding: 20px;
     text-align: center;
 }
-
+.aboutme {
+    color: white;
+}
+.about {
+    text-align: center;
+}
 section {
     padding: 20px;
     margin: 10px auto;
     max-width: 600px;
-    background: white;
+    background: #303030;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 h2 {
-    color: #007bff;
+    color: #616161;
+}
+.projects {
+    color: white;
 }
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #202020;
     color: #eee;
 
 }
@@ -37,7 +47,7 @@ footer {
     margin: 0 10px;
     color: #eee ;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: white;
     
 }
 .sociallinks > a:hover {
@@ -61,20 +71,53 @@ footer > p {
  /*Project list*/
 
  .project-list {
-    display: flex;
+    display: ;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+
+
  }
  .project-card {
-    background-color: white;
-    border-left: 4px solid green;
+    background-color: #343434;
     padding: 15px;
     border-radius: 8px;
-    width: 250px;
+    width: 500px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.113);
     transition: transform 0.2s;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    
  }
+.toggle-label {
+    display: block;
+    cursor: pointer;
+
+#Clickme-btn {
+      display: inline-block;
+   padding: 8px; 
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 6px;
+   text-decoration: none;
+   font-weight: bold;
+   transition: background-color 0.2s ease;
+   margin-left: 15px;
+
+}
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    color: white;
+}
+.toggle-box:checked + .block + .content {
+    max-height: 1000px;
+}
+
 
  .project-card:hover {
     transform: translateY(-5px);
@@ -82,12 +125,13 @@ footer > p {
 
  .project-card > h3 {
     margin-top: 0;
-    color: black;
+    color: white;
+    text-align: center;
  }
 
  .project-card > p {
     font-size: 14px;
-    color: grey;
+    color: whitesmoke;
  }
 
  .project-card > a {
@@ -139,5 +183,13 @@ footer > p {
     font-size: 16px;
     text-decoration: underline;
     text-decoration: underline white;
- }
+ }    
 
+ hr {
+    width: 50px;
+
+ }
+ section > h2 {
+    text-align: center;
+    color: orange;
+ }
